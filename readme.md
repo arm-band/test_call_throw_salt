@@ -1,4 +1,4 @@
-# Call Throw Salad
+# Call Throw Salt
 
 ## Abstract
 
