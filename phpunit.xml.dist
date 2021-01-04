@@ -1,0 +1,22 @@
+<phpunit
+    bootstrap="./tests/bootstrap.php"
+    addUncoveredFilesFromWhitelist="true"
+    processUncoveredFilesFromWhitelist="true"
+    stopOnFailure="false"
+    colors="auto">
+    <testsuites>
+        <testsuite>
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+      <whitelist processUncoveredFilesFromWhitelist="true">
+        <directory suffix=".php">./src</directory>
+        <exclude>
+          <directory suffix=".php">./tests</directory>
+          <directory>./template</directory>
+          <file>./src/config.php</file>
+        </exclude>
+      </whitelist>
+    </filter>
+</phpunit>
